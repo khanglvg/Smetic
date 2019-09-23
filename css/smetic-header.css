@@ -1,0 +1,123 @@
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.remove-outline {
+    outline: 0px !important;
+    -webkit-appearance: none;
+    box-shadow: none !important;
+}
+
+/* ==================================================
+    HEADER
+   ================================================*/
+.header-container {
+    min-height: 64px;
+    max-height: 64px;
+    background-color: #5FA8D3;
+    border-radius: 0 0 5px 5px;
+}
+
+.header-content-container {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.header-logo-container {
+    min-width: 64px;
+    max-width: 64px;
+    min-height: 64px;
+    max-height: 64px;
+}
+
+.header-logo-container img {
+    min-width: 64px;
+    max-width: 64px;
+    min-height: 64px;
+    max-height: 64px;
+}
+
+.header-search-box-button {
+    background-color: #a6a6a6;
+    color: white;
+    min-width: 150px;
+    max-width: 150px;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+    cursor: pointer;
+}
+
+.header-search-box-button:hover {
+    background-color: #c0c0c0;
+    color: white;
+}
+
+.header-search-box-button img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.header-shopping-cart img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.header-shopping-cart button {
+    border: 2px solid white;
+}
+
+.header-shopping-cart-title {
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+
+.header-shopping-cart-count {
+    margin-left: 5px;
+    min-width: 20px;
+    border-radius: 3px;
+    background-color: #f90;
+    color: white;
+}
+
+.header-user-account img {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.header-user-account button {
+    border: 2px solid white;
+}
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.header-user-account button span {
+    margin-top: 1px;
+    margin-left: 5px;
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+
+.header-user-account button img:last-child {
+    max-width: 13px;
+    max-height: 13px;
+}
+
+.header-user-account>div {
+    min-width: 184px;
+    max-width: 184px;
+}
+
+.header-user-account .color-red {
+    color: red;
+}
+
+/* ==================================================
+    MAIN SLIDER
+   ================================================*/
