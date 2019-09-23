@@ -2,7 +2,7 @@ body {
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
     color: white;
-    background-color: #5FA8D3;
+    background-color: white;
 }
 
 .remove-outline {
@@ -26,7 +26,15 @@ body {
 
 ::-webkit-scrollbar-thumb {
     border-radius: 5px;
-    background-image: linear-gradient( 79.8deg,  rgba(101,132,154,1) 3.2%, rgba(160,197,201,1) 89.1% );
+    background-image: linear-gradient(79.8deg, rgba(101, 132, 154, 1) 3.2%, rgba(160, 197, 201, 1) 89.1%);
+}
+
+.my-navbar {
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
 }
 
 /* ==================================================
@@ -45,7 +53,12 @@ body {
 }
 
 .header-content-container a {
+    padding: 0;
     color: white;
+}
+
+.header-content-container a:hover {
+    font-size: 1.2rem;
 }
 
 .header-logo-container {
@@ -144,9 +157,126 @@ body {
 /* ==================================================
     MAIN SLIDER
    ================================================*/
-.main-slider-container {}
+.main-slider-container {
+    margin-top: 64px;
+}
 
 .main-slider-carousel-inner {
     border-radius: 5px;
     max-height: calc(100vh - 64px);
+    background-image: url("http://z6z7q2p8.stackpathcdn.com/wp-content/uploads/revslider/home-01/bg-slide-1.jpg");
+    position: relative;
+}
+
+.main-slider-carousel-item-container {
+    min-height: 700px;
+    max-height: 700px;
+}
+
+.main-slider-carousel-item-image-container {
+    min-width: 420px;
+    max-width: 420px;
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.main-slider-carousel-item-image-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.main-slider-carousel-item-info-container {
+    min-height: 400px;
+    max-height: 400px;
+}
+
+.main-slider-carousel-item-info-title-container {
+    min-height: 60px;
+    /*color: #E47277;*/
+    color: #5FA8D3;
+    font-size: 2rem;
+}
+
+.main-slider-carousel-item-info-description-container {
+    min-height: 100px;
+    max-height: 100px;
+    color: #7A7A7A;
+    font-style: italic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.main-slider-carousel-item-info-button-container {
+    min-width: 170px;
+    max-width: 170px;
+    min-height: 47px;
+    max-height: 47px;
+}
+
+.main-slider-carousel-item-info-button-container button {
+    min-height: 47px;
+    border: 1px solid #5FA8D3;
+    color: #5FA8D3;
+    font-size: 1.2rem;
+    transition: all 700ms cubic-bezier(0.390, 0.500, 0.150, 1.360);
+    fill: #5FA8D3;
+}
+
+.main-slider-carousel-item-info-button-container button:hover {
+    background-color: #5FA8D3;
+    color: rgba(255, 255, 255, 0.85);
+    box-shadow: #5FA8D3 0 80px 0 2px inset;
+    color: white;
+    fill: white;
+}
+
+.main-slider-carousel-item-info-button-container button svg {
+    min-width: 15px;
+    max-width: 15px;
+    min-height: 15px;
+    max-height: 15px;
+}
+
+.main-slider-info-card {
+    background-color: white;
+    min-width: 1200px;
+    min-height: 200px;
+    margin-top: -100px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    z-index: 2 !important;
+    will-change: transform;
+}
+
+.main-slider-info-card-container {
+    background-color: transparent;
+    min-height: 100%;
+    border: 1px dashed #D6D6D6;
+}
+
+.main-slider-info-card-content-container {
+    min-height: 168px;
+    max-height: 168px;
+}
+
+.main-slider-info-card-content-title {
+    max-height: 40px;
+    font-size: 1.3rem;
+    color: #5e3c3e;
+}
+
+.main-slider-info-card-content-description {
+    max-height: 60px;
+    font-size: 0.9rem;
+    color: #7A7A7A;
+}
+
+/* ==================================================
+    SHOW PRODUCTS
+   ================================================*/
+.section-show-products {
+    border-radius: 5px;
+    background-color: white;
+    min-height: 100vh;
+    max-height: 100vh;
 }
