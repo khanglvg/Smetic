@@ -25,6 +25,10 @@ body {
     font-weight: 500;
 }
 
+.header-content-container a {
+    color: white;
+}
+
 .header-logo-container {
     min-width: 64px;
     max-width: 64px;
