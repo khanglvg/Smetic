@@ -30,7 +30,6 @@ body {
 }
 
 .my-navbar {
-
     position: fixed;
     top: 0;
     width: 100%;
@@ -80,8 +79,8 @@ body {
     color: white;
     min-width: 150px;
     max-width: 150px;
-    -webkit-transition-duration: 0.25s;
-    transition-duration: 0.25s;
+    -webkit-transition-duration: 250ms;
+    transition-duration: 250ms;
     cursor: pointer;
 }
 
@@ -159,6 +158,7 @@ body {
    ================================================*/
 .main-slider-container {
     margin-top: 64px;
+    background-image: url("http://designarc.biz/demos/cake/theme/cake-html/img/welcome-bg.jpg");
 }
 
 .main-slider-carousel-inner {
@@ -259,6 +259,14 @@ body {
     max-height: 168px;
 }
 
+.main-slider-info-card-content-container img {
+    transition-duration: 500ms;
+}
+
+.main-slider-info-card-content-container img:hover {
+    transform: scale(1.2);
+}
+
 .main-slider-info-card-content-title {
     max-height: 40px;
     font-size: 1.3rem;
@@ -276,7 +284,176 @@ body {
    ================================================*/
 .section-show-products {
     border-radius: 5px;
+    background-image: url("http://designarc.biz/demos/cake/theme/cake-html/img/welcome-bg.jpg");
+    min-height: calc(100vh - 64px);
+    max-height: calc(100vh - 64px);
+}
+
+.section-show-products:before {
+    content: "";
+    background: url(http://designarc.biz/demos/cake/theme/cake-html/img/w-left-techture.png) no-repeat scroll center center;
+    position: absolute;
+    left: 0px;
+    top: 920px;
+    height: 685px;
+    width: 237px;
+    z-index: 1;
+}
+
+.section-show-products:after {
+    content: "";
+    background: url(http://designarc.biz/demos/cake/theme/cake-html/img/w-right-techture.png) no-repeat scroll center center;
+    position: absolute;
+    right: 0px;
+    top: 920px;
+    height: 701px;
+    width: 250px;
+    z-index: 1;
+}
+
+.show-products-header {
+    color: #5e3c3e;
+    min-height: 190px;
+}
+
+.show-products-header h3 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+.show-products-header-break {
+    min-width: 500px;
+}
+
+.show-products-header-line {
+    width: 100px;
+    max-height: 2px;
+    border-top: 1px dotted #dddddd;
+}
+
+.show-products-card-container {
+    min-width: 1200px;
+}
+
+.show-products-card {
     background-color: white;
-    min-height: 100vh;
-    max-height: 100vh;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25), 0 5px 10px rgba(0, 0, 0, 0.22);
+}
+
+.show-products-card-img-container {
+    max-height: 270px;
+    border-radius: 5px;
+}
+
+.show-products-card-img-container figure {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow: hidden;
+}
+
+.show-products-card-img-container img {
+    opacity: 0.85;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transform: scale(1.01);
+    transition-duration: 300ms;
+}
+
+.show-products-card-img-container img:hover {
+    opacity: 1;
+    transform: scale(1.07);
+}
+
+.show-products-card-info-container {}
+
+
+.show-products-card-info-title a {
+    color: #5e3c3e;
+    min-height: 25px;
+    font-size: 1.1rem;
+    text-decoration: none !important;
+    transition-duration: 300ms;
+}
+
+.show-products-card-info-title a:hover {
+    font-weight: 700;
+    transform: scale(1.1);
+}
+
+.show-products-card-info-price {
+    color: #5FA8D3;
+    min-height: 25px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.show-products-card-info-add-to-cart {
+    margin-bottom: -20px;
+}
+
+.show-products-card-info-add-to-cart button {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    color: #5FA8D3;
+    border-radius: 5px;
+    max-width: 140px;
+    min-height: 40px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    transition-duration: 250ms;
+}
+
+.show-products-card-info-add-to-cart button:hover {
+    color: white;
+    background-color: #5FA8D3;
+    border: 1px solid #5FA8D3;
+}
+
+.show-products-card-view-more button {
+    min-width: 300px;
+    min-height: 64px;
+    border: 1px solid #5FA8D3;
+    color: #5FA8D3;
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 1.4rem;
+    transition-duration: 300ms;
+}
+
+.show-products-card-view-more button:hover {
+    border: 1px solid #5e3c3e;
+    color: #5e3c3e;
+}
+
+.footer {
+    min-height: 1100px;
+    background-color: #1b1b1b;
+    font-weight: 400;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+
+.footer-wrap-content {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    min-height: 1100px;
+}
+
+.footer-wrap-content:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: .5;
+    background-repeat: repeat;
+    background-image: url(http://z6z7q2p8.stackpathcdn.com/wp-content/themes/cakeart/images/wave-line.png);
 }
