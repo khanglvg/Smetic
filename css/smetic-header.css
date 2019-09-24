@@ -414,19 +414,21 @@ body {
 }
 
 .show-products-card-view-more button {
+    background-color: #5FA8D3;
     min-width: 300px;
     min-height: 64px;
     border: 1px solid #5FA8D3;
-    color: #5FA8D3;
+    color: white;
     border-radius: 5px;
     font-weight: 300;
     font-size: 1.4rem;
     transition-duration: 300ms;
+    font-weight: 700;
 }
 
 .show-products-card-view-more button:hover {
-    border: 1px solid #5e3c3e;
-    color: #5e3c3e;
+    background-color: transparent;
+    color: #5FA8D3;
 }
 
 .footer {
@@ -456,4 +458,47 @@ body {
     opacity: .5;
     background-repeat: repeat;
     background-image: url(http://z6z7q2p8.stackpathcdn.com/wp-content/themes/cakeart/images/wave-line.png);
+}
+
+.footer-title {
+    font-size: 1.3rem;
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: white;
+}
+
+.footer-connection-title h4 {}
+
+.footer-connection-content {
+    font-family: 'Poppins', sans-serif;
+    color: #dddddd;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.footer-connection-name {
+    font-size: 1.2rem;
+}
+
+.footer-connection-address {
+    line-height: 1.5;
+}
+
+.footer-connection-social-media li a {
+    display: inline-block;
+    text-align: center;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    color: #fff;
+    border: 1px solid #7b7b7c;
+    font-size: 1rem;
+    line-height: 35px;
+    transition: all 300ms linear 0s;
+}
+
+.footer-connection-social-media li a:hover {
+    color: #5FA8D3;
+    border: 1px solid #5FA8D3;
 }
