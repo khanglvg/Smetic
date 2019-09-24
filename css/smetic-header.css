@@ -78,6 +78,29 @@ body {
     max-height: 64px;
 }
 
+.header-content-menu {
+    min-height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 300ms;
+}
+
+.header-content-menu-dropdown {
+    min-width: 500px;
+    min-height: 200px;
+}
+
+.header-content-menu-dropdown a {
+    color: black;
+}
+
+.header-content-menu:hover>.header-content-menu-dropdown {
+    display: block;
+    position: absolute;
+    margin-top: -2px;
+}
+
 .header-search-box-button {
     background-color: #a6a6a6;
     color: white;
